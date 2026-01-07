@@ -100,7 +100,7 @@ const formatPayState = (payState)=>{
                 <p v-if="order.orderState === 3">
                   <a href="javascript:;" class="green">查看物流</a>
                 </p>
-                <p v-if="order.orderState === 3">
+                <p v-if="order.orderState === 4">
                   <a href="javascript:;" class="green">评价商品</a>
                 </p>
                 <p v-if="order.orderState === 5">
