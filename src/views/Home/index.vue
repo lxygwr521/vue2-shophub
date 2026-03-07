@@ -3,9 +3,9 @@
 		<!-- 中心 -->
 		<div class="home-carousel">
 			<div class="container">
-				<!-- 左侧分类推荐 -->
+					<!-- 轮播图 -->
 				<HomeBanner />
-				<!-- 轮播图 -->
+			<!-- 左侧分类推荐 -->
 				<HomeCategory />
 			</div>
 		</div>

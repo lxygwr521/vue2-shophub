@@ -10,7 +10,7 @@
 					@mouseenter="showNav(index)"
 					@mouseleave="hideNav(index)">
 					<router-link :to="`/category/${item.id}`">{{ item.name }}</router-link>
-					<AppHeaderNav :children="item.children" ref="open" />
+					<AppHeaderNav :children="item.children" :isShow =  "index === curIndex " />
 				</li>
 			</ul>
 			<div class="search">
@@ -61,6 +61,7 @@ export default {
 		return {
 			isShowLayer: false,
 			keyword: '', //搜索关键字
+			curIndex: null,
 		};
 	},
 	computed: {
@@ -78,10 +79,10 @@ export default {
 	},
 	methods: {
 		showNav(id) {
-			this.$refs.open[id].isShow = true;
+			this.curIndex = id;
 		},
 		hideNav(id) {
-			this.$refs.open[id].isShow = false;
+			this.curIndex = null;
 		},
 		// 删除商品
 		remove(skuId) {

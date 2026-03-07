@@ -115,6 +115,7 @@ export default {
 				});
 				this.result = data.data.result;
 				this.details = data.data.result.details;
+				console.log(this.result)
 			});
 		},
 		// 图片加载完成加载此函数 将 elementOver 改为 true
@@ -131,6 +132,7 @@ export default {
 		// 面包屑处理
 		bread() {
 			// layer
+			//当前商品之前的层级信息
 			const bread = this.result.categories.map(item => {
 				if (item.layer === 1) {
 					item.id = '/category/' + item.id;
@@ -141,6 +143,7 @@ export default {
 				}
 			});
 			bread.reverse();
+			//当前商品的信息
 			bread.push({
 				id: `/goods/${this.result.id}`,
 				name: this.result.name,

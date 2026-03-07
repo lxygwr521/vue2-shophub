@@ -105,7 +105,7 @@ export default {
 						setToken(data.data.result.token);
 						// 将token存储至vuex
 						this.$store.commit('user/setToken', data.data.result.token);
-						// 将用户信息存储vux
+						// 将用户信息存储vuex
 						this.$store.commit('user/setUserInfo', data.data.result);
 						this.$message({
 							message: '登录成功！',

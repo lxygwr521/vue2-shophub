@@ -16,10 +16,10 @@ export default {
 	name: 'AppHeaderNav',
 	data() {
 		return {
-			isShow: false,
+			
 		};
 	},
-	props: ['children'],
+	props: ['children','isShow'],
 };
 </script>
 

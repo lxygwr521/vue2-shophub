@@ -33,7 +33,7 @@ const router = new VueRouter({
 		},
 		{
 			path: '/goods/:id',
-			component: () => import('@/views/Goods'),
+			component: () => import('@/views/goods'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
@@ -44,7 +44,7 @@ const router = new VueRouter({
 		{
 			path: '/member',
 			name: 'member',
-			component: () => import('@/views/Member'),
+			component: () => import('@/views/member'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
@@ -55,7 +55,7 @@ const router = new VueRouter({
 			children: [
 				{
 					path: '/member',
-					component: () => import('@/views/Member/Home'),
+					component: () => import('@/views/member/home'),
 					meta: {
 						isShowNav: true,
 						isShowHeader: true,
@@ -66,7 +66,7 @@ const router = new VueRouter({
 				{
 					path: 'order',
 					name: 'order',
-					component: () => import('@/views/Member/Order'),
+					component: () => import('@/views/member/order'),
 					meta: {
 						isShowNav: true,
 						isShowHeader: true,
@@ -77,7 +77,7 @@ const router = new VueRouter({
 						{
 							path: ':id',
 							name: 'detail',
-							component: () => import('@/views/Member/Order/Detail'),
+							component: () => import('@/views/member/order/detail'),
 							name: 'orderDetail',
 							meta: {
 								isShowNav: true,
@@ -91,7 +91,7 @@ const router = new VueRouter({
 				{
 					path: 'address',
 					name: 'address',
-					component: () => import('@/views/Member/Address'),
+					component: () => import('@/views/member/address'),
 					meta: {
 						isShowNav: true,
 						isShowHeader: true,
@@ -102,7 +102,7 @@ const router = new VueRouter({
 				{
 					path: 'safe',
 					name: 'safe',
-					component: () => import('@/views/Member/Safe'),
+					component: () => import('@/views/member/safe'),
 					meta: {
 						isShowNav: true,
 						isShowHeader: true,
@@ -113,7 +113,7 @@ const router = new VueRouter({
 				{
 					path: 'info',
 					name: 'info',
-					component: () => import('@/views/Member/Info'),
+					component: () => import('@/views/member/info'),
 					meta: {
 						isShowNav: true,
 						isShowHeader: true,
@@ -124,7 +124,7 @@ const router = new VueRouter({
 				{
 					path: 'foot',
 					name: 'foot',
-					component: () => import('@/views/Member/Foot'),
+					component: () => import('@/views/member/foot'),
 					meta: {
 						isShowNav: true,
 						isShowHeader: true,
@@ -134,7 +134,7 @@ const router = new VueRouter({
 				},
 				{
 					path: 'collect',
-					component: () => import('@/views/Member/Collect'),
+					component: () => import('@/views/member/collect'),
 					meta: {
 						isShowNav: true,
 						isShowHeader: true,
@@ -145,7 +145,7 @@ const router = new VueRouter({
 						{
 							path: '/',
 							name: 'collect',
-							component: () => import('@/views/Member/Collect/Goods'),
+							component: () => import('@/views/member/collect/goods'),
 							meta: {
 								isShowNav: true,
 								isShowHeader: true,
@@ -156,7 +156,7 @@ const router = new VueRouter({
 						{
 							path: 'special',
 							name: 'special',
-							component: () => import('@/views/Member/Collect/Special'),
+							component: () => import('@/views/member/collect/special'),
 							meta: {
 								isShowNav: true,
 								isShowHeader: true,
@@ -167,7 +167,7 @@ const router = new VueRouter({
 						{
 							path: 'brand',
 							name: 'brand',
-							component: () => import('@/views/Member/Collect/Brand'),
+							component: () => import('@/views/member/collect/brand'),
 							meta: {
 								isShowNav: true,
 								isShowHeader: true,
@@ -181,7 +181,7 @@ const router = new VueRouter({
 		},
 		{
 			path: '/cart',
-			component: () => import('@/views/Cart'),
+			component: () => import('@/views/cart'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
@@ -192,7 +192,7 @@ const router = new VueRouter({
 		{
 			path: '/checkout',
 			name: 'checkout',
-			component: () => import('@/views/Checkout'),
+			component: () => import('@/views/checkout'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
@@ -203,7 +203,7 @@ const router = new VueRouter({
 		{
 			path: '/pay',
 			name: 'pay',
-			component: () => import('@/views/Pay'),
+			component: () => import('@/views/pay'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
@@ -213,7 +213,7 @@ const router = new VueRouter({
 		},
 		{
 			path: '/category/:id',
-			component: () => import('@/views/Category'),
+			component: () => import('@/views/category'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
@@ -223,7 +223,7 @@ const router = new VueRouter({
 		},
 		{
 			path: '/category/sub/:id',
-			component: () => import('@/views/Category/sub'),
+			component: () => import('@/views/category/sub'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
@@ -233,7 +233,7 @@ const router = new VueRouter({
 		},
 		{
 			path: '/download',
-			component: () => import('@/views/Download'),
+			component: () => import('@/views/download'),
 			meta: {
 				isShowNav: true,
 				isShowHeader: true,
