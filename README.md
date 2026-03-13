@@ -72,8 +72,6 @@ $ npm run build
 ![购物车](./images/uTools_1681487537178.png)
 ![填写订单](./images/uTools_1681487557055.png)
 ![提交订单](./images/uTools_1681487570840.png)
-![订单详情](./images/uTools_1681487587514.png)
-![个人信息](./images/uTools_1681487649022.png)
 ![全部订单](./images/uTools_1681487667260.png)
 
 ### 项目难点
