@@ -10,15 +10,12 @@
 
 项目基于 Vue2 全家桶开发的 单页面电商网站
 
-后端 API文档[点我](http://zhoushugang.gitee.io/erabbit-client-pc-document/api.html)
-
 喜欢的话欢迎 star
 
 ### 安装
 
 ```
-$ git clone https://github.com/xyyfun/xiaotuxian.git
-$ cd vue-app
+$ https://github.com/lxygwr521/vue2-shophub
 $ npm install
 ```
 
@@ -34,32 +31,6 @@ $ npm run serve
 $ npm run build
 ```
 
-### 进度
-
-- [x] 首页
-- [x] 登录
-- [x] 注册
-- [x] 商品所有分类
-
-  - [x] 商品分类
-
-- [x] 商品详情
-  - [ ] 商品评论
-- [x] 购物车
-- [x] 提交订单
-- [x] 支付
-- [x] 个人中心
-  - [x] 个人中心
-  - [x] 个人信息
-  - [ ] 安全设置
-  - [x] 地址管理
-  - [x] 我的足迹
-  - [x] 我的订单
-    - [ ] 商品跟踪 
-  - [x] 我的收藏商品
-  - [ ] 收藏的专题
-  - [ ] 关注的品牌
-- [x] 下载手机应用
 
 ### 使用技术
 
